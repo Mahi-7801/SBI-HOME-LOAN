@@ -1,0 +1,362 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    width: 100%;
+    box-shadow: 0 7px 8px black;
+}
+nav ul{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    gap: 20px;
+    padding: 0 10px;
+    font-size: 15px;
+}
+li a{
+    text-decoration: none;
+    color: rgb(37, 37, 37);
+    font-weight: 300;
+}
+nav li a:hover{
+    background-color: aquamarine;
+}
+nav a{
+    display: flex;
+    margin: 20px 0px;
+    text-align: center;
+}
+nav li:first-child{
+    margin-right: auto;
+}
+ul li img{
+    width: 200px;
+    margin-left: 80px;
+    margin-top: -10px;
+}
+.meanbtn2{
+    display: none;
+}
+
+.sidebar{
+    display:none;
+    position: absolute;
+    width: 300px;
+    height: 100vh;
+    background-color:rgba(255, 255, 255, 0.497);
+    backdrop-filter: blur(30px);
+    z-index: 999;
+    top: 0;
+    right: 0;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+@media (max-width:800px) {
+    .meanbtn2{
+        display: block;
+    }
+    .meanbtn1{
+        display: none;
+    }
+}
+.carousel{
+    margin-top: -20px;
+}
+#aboutdata{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.aboutinfo h1{
+    font-size: 30px;
+    font-weight: 800;
+    color: cadetblue;
+}
+.aboutinfo h3{
+    font-size: 30px;
+    font-weight: 100;
+    color: rgb(3, 255, 234);
+}
+.aboutinfo p{
+    position: relative;
+    top:-150px;
+}
+.aboutinfo img{
+    position: relative;
+    top: 0;
+    left: 300px;
+    width:auto;
+}
+.aboutinfo button{
+    position: relative;
+    top: -150px;
+    border:none;
+    outline: none;
+    font-size: 17px;
+    font-style: italic;
+    border-bottom: 2px solid #0230ff;
+}
+.notification h1{
+    position: relative;
+    top: -140px;
+    padding: 20px 0px;
+}
+#meaninfomation{
+    background-color: #51bdbd;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+#rowicons h1{
+    font-size: 25px;
+    font-weight: 600;
+}
+#colicon1{
+    cursor: pointer;
+}
+#colicon1:hover{
+    background-color: yellowgreen;
+}
+#colicon2{
+    cursor: pointer;
+}
+#colicon2:hover{
+    background-color: yellowgreen;
+}
+#colicon3{
+    cursor: pointer;
+}
+#colicon3:hover{
+    background-color: yellowgreen;
+}
+#colicon4{
+    cursor: pointer;
+}
+#colicon4:hover{
+    background-color: yellowgreen;
+}
+#colicon5{
+    cursor: pointer;
+}
+#colicon5:hover{
+    background-color: yellowgreen;
+}
+#rowicons{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0px 70px;
+}
+
+#colicon1 img{
+    padding: 30px 0px 0px 0px;
+}
+#colicon2 img{
+    padding: 30px 0px 0px 0px;
+}
+#colicon3 img{
+    padding: 30px 0px 0px 0px;
+}
+#colicon4 img{
+    padding: 30px 0px 0px 0px;
+}
+#colicon5 img{
+    padding: 30px 0px 0px 0px;
+}
+#calinfo{
+    display: none;
+}
+#rowicons1{
+    display:flex;
+    justify-content: space-evenly;
+    padding: 0px 70px;
+}
+#colicon11 h5{
+    font-size: 15px;
+    padding: 20px 0px;
+}
+#colicon22 h5{
+    font-size: 15px;
+    padding: 20px 0px;
+}
+#colicon33 h5{
+    font-size: 15px;
+    padding: 20px 0px;
+}
+#colicon44 h5{
+    font-size: 15px;
+    padding: 20px 0px;
+}
+#colicon55 h5{
+    font-size: 15px;
+    padding: 20px 0px;
+}
+#rowicons2{
+    display:none;
+    justify-content: space-evenly;
+    padding: 0px 70px;
+}
+.headingcal h1{
+    margin: 30px 0px;
+    font-size: 30px;
+    font-weight: 600;
+}
+.headingcal h1::after{
+    position: relative;
+    display: block;
+    content: '';
+    width:400px;
+    background-color: #a59c9c;
+    top: 20px;
+    left: 0;
+    height: 2px;
+    border:2px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.para{
+    margin: 40px 0px;
+}
+.btnproceed{
+    border: none;
+    border-bottom-style:dotted;
+    background-color: transparent;
+}
+#rowicons3{
+    display:none;
+    justify-content: space-evenly;
+    padding: 0px 70px;
+}
+.col h5{
+    font-size: 15px;
+}
+.btnsubmit{
+    margin-top: 20px;
+    width: 90px;
+}
+#rowicons4{
+    display:none;
+    justify-content: space-evenly;
+    padding: 0px 70px;
+}
+#fqsa img{
+    position: relative;
+    display: block;
+    top:0;
+    left: 40px;
+}
+#fqsa p{
+    position: relative;
+    top: -140px;
+    margin-left:90px;
+}
+#rowicons5{
+    display:none;
+    justify-content: space-evenly;
+    padding: 0px 70px;
+}
+#contactus img{
+    position: relative;
+    display: block;
+    top: 0;
+    left:40px;
+}
+#contactus p{
+    position: relative;
+    display: block;
+    top: -140px;
+    margin-left: 90px;
+}
+.downloadheading h1{
+    font-size: 30px;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-weight: 300;
+}
+#download li{
+    list-style: none;
+    padding: 0px 18px;
+    background: url(../images/list-bg.jpg) no-repeat left 9px ;
+    margin-top: 10px;
+}
+#downloadinfo{
+    display: flex;
+    justify-content: space-evenly;
+    overflow: hidden;
+    margin: 30px 0px;
+}
+#downloadimg{
+    margin-top: -10px;
+}
+#downloadimg h1{
+    font-size: 30px;
+    font-weight: 800;
+    color: #51bdbd;
+}
+#downloadimg h4{
+    font-size: 20px;
+    font-weight: 200;
+    color: aqua;
+}
+#footerrow{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+}
+footer{
+    background-color: #2d2a2a;
+    width: 100%;
+    height: 100%;
+}
+#footer li a{
+    color: #6c6969;
+}
+#footer{
+    margin-top: 20px;
+}
+#footer ul{
+    list-style: none;
+    margin: 10px 0px;
+    color: white;
+}
+#footer ul li{
+    padding:6px 0px;
+}
+#footericon{
+    margin-top: 20px;
+}
+#footericon h5{
+    margin-top: 20px;
+    color: white;
+}
+.face{
+    margin-left: -100px;
+}
+.tw-icon{
+    margin-left: -10px;
+}
+.yt-icon{
+    margin-left: -10px;
+}
+.in-icon{
+    margin-left: -10px;
+}
+.inst-icon{
+    margin-left: 10px;
+}
+#footerlogo{
+    margin-top: 30px;
+}
+#footerlogo h5{
+    color: white;
+}
+#footerlogo p{
+    color: #6c6969;
+}
+.footerstament{
+    text-align: center;
+    color: white;
+}
